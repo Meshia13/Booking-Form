@@ -1,0 +1,251 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+    
+    <section id="reservation" class="container">
+        <h1>Booking Form</h1>
+        <p class="title">Please complete form below!</p>
+
+        <form action="">
+
+            <fieldset>
+                <legend>Client Information</legend>
+
+                <div class="user-info">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Mary" 
+                    autocomplete="on" required autofocus>
+                </div>
+
+                <div class="user-info">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Smith" 
+                    autocomplete="on" required>
+                </div>
+
+                <div class="user-info">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="5554443333"
+                    pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                </div>
+
+                <div class="user-info">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder=" " autocomplete="on"
+                    required>
+                </div> 
+
+                <div class="user-info">
+                    <label for="address">Address:</label>
+                    <input type="text" name="address" id="address" placeholder=" " autocomplete="on"
+                    required>
+                </div> 
+
+                <div class="user-info">
+                    <label for="address">Address:</label>
+                    <input type="text" name="address" id="address" placeholder="optional " autocomplete="on"
+                    >
+                </div> 
+
+                <div class="user-info">
+                    <label for="state">State & City:</label>
+                    <select name="state" id="state">
+
+                        <optgroup label="Illinois"> 
+                            <option value="aurora">Aurora</option>
+                            <option value="chicage">Chicago</option>
+                            <option value="peoria">Peoria</option>
+                        </optgroup>
+
+                        <optgroup label="Michigan">
+                            <option value="detroit">Detroit</option>
+                            <option value="lansing">Lansing</option>
+                            <option value="troy">Troy</option>
+                        </optgroup>
+                    </select>
+                </div> 
+
+                <div class="user-info">
+                    <label for="zipcode">Zipcode:</label>
+                    <input type="text" pattern="[0-9]{5}" name="zipcode" id="zipcode"  placeholder="5 digit code"
+                    autocomplete="on" required>
+                </div> 
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Consultation Information</legend>
+                <div class="consultation-info">
+                    <label for="consultation-type">Consultation Type:</label>
+                    <select name="consultation-type" id="consultation-type">
+                        <option value="dress">Dress Selection</option>
+                        <option value="floral">Floral Arrangenment</option>
+                        <option value="catering">Catering</option>
+                    </select>
+                </div>
+
+                <div class="consultation-info">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" min="2024-01-01" max="2027-12-31">
+                </div>
+
+                <div class="consultation-info">
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" min="09:00" max="18:00" required>
+                </div>
+
+                <hr>
+
+                <p>
+                    Please selected any additional items that you would like to discuss during your visit. 
+                    <br><em>(select as many as needed)</em>
+                </p>
+
+                <hr>
+
+                <div class="consultation-info">
+                    <!-- Might have to put these in containers to make them responsive -->
+                    <h3>Bridal:</h3>
+                    <div>
+                        <input type="checkbox" name="bridal" id="belt" value="belt">
+                        <label for="belt">Belt</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="bridal" id="garter" value="garter">
+                        <label for="garter">Garter</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="bridal" id="jewelry" value="jewelry">
+                        <label for="jewelry">Jewelry</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="bridal" id="veil" value="veil">
+                        <label for="veil">Veil</label>
+                    </div>
+
+                    <h3>Dietary:</h3>
+                    <div>
+                        <input type="checkbox" name="diet" id="keto" value="keto">
+                        <label for="keto">Keto</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="diet" id="vegan" value="vegan">
+                        <label for="vegan">Vegan</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="diet" id="vegetarian" value="vegetarian">
+                        <label for="vegetarian">Vegetarian</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="diet" id="none" value="none">
+                        <label for="none">None/Other</label>
+                        <input type="text" name="otherDiet" id="otherDiet" placeholder="optional">
+                    </div>
+
+                    <h3>Floral:</h3>
+                    <div>
+                        <input type="checkbox" name="floral" id="bride" value="bride">
+                        <label for="bride">Bridal Bouquet</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="floral" id="centerpiece" value="centerpiece">
+                        <label for="centerpiece">Center Piece</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="floral" id="corsage" value="corsage">
+                        <label for="corsage">Corsage</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="floral" id="venue" value="venue">
+                        <label for="venue">Venue</label>
+                    </div>
+                    
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Wedding Information</legend>
+
+                <div class="wedding-info">
+                    <label for="brideName">Bride Name:</label>
+                    <input type="text" name="brideName" id="brideName" autocomplete="on">
+                </div>
+                
+                <div class="wedding-info">
+                    <label for="groomName">Groom Name:</label>
+                    <input type="text" name="groomName" id="groomName" autocomplete="on">
+                </div>
+
+                <div class="wedding-info">
+                    <label for="wedding-date">Event Date:</label>
+                    <input type="date" id="wedding-date" name="wedding-date" min="2024-01-01" max="2027-12-31">
+                </div>
+
+                <div class="wedding-info">
+                    <label for="wedding-start">Start Time:</label>
+                    <input type="time" id="wedding-start" name="wedding-start">
+                </div>
+
+                <div class="wedding-info">
+                    <label for="wedding-end">End Time:</label>
+                    <input type="time" id="wedding-end" name="wedding-end">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Reception Information</legend>
+
+                <div class="reception-info">
+                    <label for="reception-hall">Venue Name:</label>
+                    <input type="text" name="reception-hall" id="reception-hall" autocomplete="on">
+                </div>
+                
+                <div class="reception-info">
+                    <label for="reception-address">Venue Address:</label>
+                    <input type="text" name="reception-address" id="reception-address" autocomplete="on">
+                </div>
+
+                <div class="reception-info">
+                    <label for="reception-date">Event Date:</label>
+                    <input type="date" id="reception-date" name="reception-date" min="2024-01-01" max="2027-12-31">
+                </div>
+
+                <div class="reception-info">
+                    <label for="reception-start">Start Time:</label>
+                    <input type="time" id="reception-start" name="reception-start">
+                </div>
+
+                <div class="reception-info">
+                    <label for="reception-end">End Time:</label>
+                    <input type="time" id="reception-end" name="reception-end">
+                </div>
+
+                <div class="reception-info">
+                    <label for="reception-guest">Number of Guests:</label>
+                    <input type="number" id="reception-guest" name="reception-guest" min="50" max="200" step="10">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="message">Your Message:</label> <br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="type your message here"></textarea>
+            </fieldset> <br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+        </form>
+
+    </section>
+
+
+ </body>
+ </html>
