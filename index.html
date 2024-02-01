@@ -6,8 +6,19 @@
     <title>Booking Form</title>
 
     <link rel="stylesheet" href="style.css">
- </head>
- <body>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+
+</head>
+ 
+<body>
     
     <section id="reservation" class="container">
         <h1>Booking Form</h1>
@@ -18,64 +29,66 @@
             <fieldset>
                 <legend>Client Information</legend>
 
-                <div class="user-info">
-                    <label for="firstName">First Name:</label>
-                    <input type="text" name="firstName" id="firstName" placeholder="Mary" 
-                    autocomplete="on" required autofocus>
-                </div>
+                <div class="client-info">
+                    <div class="user-info">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Mary" 
+                        autocomplete="on" required autofocus>
+                    </div>
+                
+                    <div class="user-info">
+                        <label for="address">Address:</label>
+                        <input type="text" name="address" id="address" placeholder=" " autocomplete="on"
+                        required>
+                    </div>
+                    
+                    <div class="user-info">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Smith" 
+                        autocomplete="on" required>
+                    </div>
 
-                <div class="user-info">
-                    <label for="lastName">Last Name:</label>
-                    <input type="text" name="lastName" id="lastName" placeholder="Smith" 
-                    autocomplete="on" required>
-                </div>
+                    <div class="user-info">
+                        <label for="address">Address:</label>
+                        <input type="text" name="address" id="address" placeholder="optional " autocomplete="on"
+                        >
+                    </div> 
 
-                <div class="user-info">
-                    <label for="phone">Phone:</label>
-                    <input type="tel" name="phone" id="phone" placeholder="5554443333"
-                    pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
-                </div>
+                    <div class="user-info">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder=" " autocomplete="on"
+                        required>
+                    </div> 
 
-                <div class="user-info">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder=" " autocomplete="on"
-                    required>
-                </div> 
+                    <div class="user-info">
+                        <label for="state">State & City:</label>
+                        <select name="state" id="state">
 
-                <div class="user-info">
-                    <label for="address">Address:</label>
-                    <input type="text" name="address" id="address" placeholder=" " autocomplete="on"
-                    required>
-                </div> 
+                            <optgroup label="Illinois"> 
+                                <option value="aurora">Aurora</option>
+                                <option value="chicage">Chicago</option>
+                                <option value="peoria">Peoria</option>
+                            </optgroup>
 
-                <div class="user-info">
-                    <label for="address">Address:</label>
-                    <input type="text" name="address" id="address" placeholder="optional " autocomplete="on"
-                    >
-                </div> 
+                            <optgroup label="Michigan">
+                                <option value="detroit">Detroit</option>
+                                <option value="lansing">Lansing</option>
+                                <option value="troy">Troy</option>
+                            </optgroup>
+                        </select>
+                    </div> 
+                    
+                    <div class="user-info">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="5554443333"
+                        pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                    </div>
 
-                <div class="user-info">
-                    <label for="state">State & City:</label>
-                    <select name="state" id="state">
-
-                        <optgroup label="Illinois"> 
-                            <option value="aurora">Aurora</option>
-                            <option value="chicage">Chicago</option>
-                            <option value="peoria">Peoria</option>
-                        </optgroup>
-
-                        <optgroup label="Michigan">
-                            <option value="detroit">Detroit</option>
-                            <option value="lansing">Lansing</option>
-                            <option value="troy">Troy</option>
-                        </optgroup>
-                    </select>
-                </div> 
-
-                <div class="user-info">
-                    <label for="zipcode">Zipcode:</label>
-                    <input type="text" pattern="[0-9]{5}" name="zipcode" id="zipcode"  placeholder="5 digit code"
-                    autocomplete="on" required>
+                    <div class="user-info">
+                        <label for="zipcode">Zipcode:</label>
+                        <input type="text" pattern="[0-9]{5}" name="zipcode" id="zipcode"  placeholder="5 digit code"
+                        autocomplete="on" required>
+                    </div>
                 </div> 
 
             </fieldset>

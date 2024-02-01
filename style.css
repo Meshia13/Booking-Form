@@ -1,22 +1,70 @@
+/* font-family: 'Dancing Script', cursive; */
+/* font-family: 'Tangerine', cursive; */
+
 *{
     padding: 0;
     margin: 0;
 }
 
 body {
+    
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+.container {
+  
+  padding: 25px;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  background: rgb(235, 220, 148);
+  margin: 0 28px;
+
+
 }
 
 h1 {
+    font-family: 'Tangerine', cursive;
     text-align: center;
+    font-size: 6rem;
+    color: rgb(122, 112, 53);
+    
 }
-
+/* Paragraph title */
 .title {
     text-align: center;
+    padding-bottom: 10px;
 }
+
+/* Client information fieldset. */
+
+.client-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+   
+    
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    text-align:left;
+    padding-right:10px;
+}
+
+
+
+.user-info label {
+    margin-right: 10px;
+}
+
+/* End client information fieldset. */
 
 legend {
     text-align: center;
