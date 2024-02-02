@@ -45,13 +45,14 @@ h1 {
 
 fieldset {
     border-radius: 10px;
+    border-color: rgb(176, 163, 86);
 }
 
 legend {
     /* text-align: center; */
     font-size: 1.5rem;
     font-weight: bold;
-    color: rgb(82, 78, 78);
+    color: rgb(122, 112, 53);
     padding: 20px;
     text-align: center;
 }
