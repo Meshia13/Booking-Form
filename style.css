@@ -4,6 +4,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -12,6 +13,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(97, 88, 35);
+    padding-top: 25px;
+    background: rgb(101, 93, 50);
     
 }
 
@@ -39,7 +43,9 @@ h1 {
 .title {
     text-align: center;
     padding-bottom: 10px;
+    font-size: 20px;
     color: white;
+    font-weight: bold;
 }
 
 /* Fieldset and Legend styling */
@@ -163,3 +169,92 @@ legend {
 }
 
 /* Additional Information Fieldset */
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Responsive media query */
+
+@media only screen and (max-width: 875px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* fieldset {
+        border:0 none;
+    }
+     */
+
+    /* legend {
+        text-align: left;
+    } */
+
+    .client-container {
+        display: flex;
+        flex-direction: column;
+        
+        padding-right: 20px;
+        
+        
+    }
+
+    .user-info {
+        width:100%;
+        
+    }
+
+    .consultation-options {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        
+    }
+
+    .consultation-options {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-top: 10px;
+        width: auto;
+        
+    }
+
+    .consultation-info .option-container {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .wedding-info {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+    }
+
+    .reception-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .reception-info {
+        width:100%;
+        
+    }
+    
+}
+
+/* End Responsive media query */

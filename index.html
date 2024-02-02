@@ -28,13 +28,15 @@
 
         <form action="">
 
+            <!-- Client Information Fieldset -->
             <fieldset>
                 <legend>Client Information</legend>
-
+                <!-- Client information section -->
                 <div class="client-info">
-
+                    <!-- Container for the client information -->
                     <div class="client-container">
-
+                        
+                        <!-- container to hold contact info: first&last name, email and phone -->
                         <div class="contact">
                             <div class="user-info">
                                 <label for="firstName">First Name:</label>
@@ -60,7 +62,9 @@
                                 pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
                             </div>
                         </div>
+                        <!-- end container to hold contact info: first&last name, email and phone -->
                     
+                        <!-- container to hold mailing information for client -->
                         <div class="mailing-container">
                             <div class="user-info">
                                 <label for="address">Address:</label>
@@ -98,16 +102,23 @@
                                 autocomplete="on" required>
                             </div>
                         </div>
+                        <!-- container to hold mailing information for client -->
                     </div>
+                    <!-- End of Container for the client information -->
                 </div> 
-
+                <!-- Client information section -->
             </fieldset>
+            <!-- Client Information Fieldset -->
 
+            
+            <!-- Consultation Information Fieldset -->
             <fieldset>
                 <legend>Consultation Information</legend>
-
+                
+                <!-- Consultation container -->
                 <div class="consultation-container">
-
+                    
+                    <!-- container for consultation options for type, date and time -->
                     <div class="consultation-options">
 
                         <div class="consultation-info">
@@ -130,8 +141,7 @@
                         </div>
 
                     </div>
-
-                    
+                    <!-- end container for consultation options for type, date and time-->
 
                     <p class="consultation-message">
                         Please selected any additional items that you would like to discuss during your visit. 
@@ -139,14 +149,15 @@
                     </p>
 
                     
-
-                    
+                    <!-- container for consultation-info. -->
                     <div class="consultation-info">
 
-                        <!-- Container to make a grid -->
+                        <!-- Options Container to make a grid for add-on categories -->
                         <div class="option-container">
                             
                             <!-- Separate container for each category -->
+                            
+                            <!-- bridal container -->
                             <div class="bridal">
                                 <h3>Bridal:</h3>
                                 <div>
@@ -166,7 +177,9 @@
                                     <label for="veil">Veil</label>
                                 </div>
                             </div>
+                            <!-- end bridal container -->
 
+                            <!-- dietary container -->
                             <div class="dietary">
                                 <h3>Dietary:</h3>
                                 <div>
@@ -187,7 +200,9 @@
                                     <input type="text" name="otherDiet" id="otherDiet" placeholder="optional">
                                 </div>
                             </div>
+                            <!--end dietary container -->
 
+                            <!--floral container -->
                             <div class="floral">
                                 <h3>Floral:</h3>
                                 <div>
@@ -207,15 +222,21 @@
                                     <label for="venue">Venue</label>
                                 </div>
                             </div>
+                            <!--end floral container -->
                         </div>
-                        
+                        <!-- end of options Container to make a grid for add-on categories -->
                     </div>
+                    <!-- container for consultation-info. -->
                 </div>
+                <!--end Consultation container -->
             </fieldset>
-
+            <!-- Consultation Information Fieldset -->
+            
+            <!-- Wedding Information Fieldset -->
             <fieldset>
                 <legend>Wedding Information</legend>
-
+                
+                <!-- wedding container -->
                 <div class="wedding-container">
                     <div class="wedding-info">
                         <label for="brideName">Bride Name:</label>
@@ -242,13 +263,18 @@
                         <input type="time" id="wedding-end" name="wedding-end">
                     </div>
                 </div>
+                <!-- end wedding container -->
             </fieldset>
-
+            <!-- end Wedding Information Fieldset -->
+            
+            <!-- Reception Information Fieldset -->
             <fieldset>
                 <legend>Reception Information</legend>
-
+                
+                <!-- reception container -->
                 <div class="reception-container">
-
+                    
+                    <!-- Reception venue container to make grid for venue info -->
                     <div class="reception-venue">
 
                         <div class="reception-info">
@@ -267,7 +293,9 @@
                             <input type="number" id="reception-guest" name="reception-guest" min="50" max="200" step="10">
                         </div>
                     </div>
+                    <!-- end Reception venue container to make grid for venue info -->
 
+                    <!-- Reception venue2 container to make grid for event date -->
                     <div class="reception-venue2">
                         <div class="reception-info">
                             <label for="reception-date">Event Date:</label>
@@ -284,12 +312,13 @@
                             <input type="time" id="reception-end" name="reception-end">
                         </div>
                     </div>
-
-                    
+                    <!-- Reception venue2 container to make grid for event date -->
                 </div>
-                
+                <!-- end reception container -->
             </fieldset>
+            <!-- End Reception Information Fieldset -->
 
+            <!-- Additional Information Fieldset -->
             <fieldset>
                 <legend>Additional Information</legend>
 
@@ -299,10 +328,12 @@
                     placeholder="type your message here"></textarea>
                 </div>   
             </fieldset> <br>
+            <!-- End Additional Information Fieldset -->
 
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-
+            <div class="btn">
+                <button type="submit" class="submit">Submit</button>
+                <button type="reset" class="reset">Reset</button>
+            </div>   
         </form>
 
     </section>
