@@ -21,7 +21,7 @@ body {
   width: 100%;
   max-width: 800px;
   border-radius: 10px;
-  background: rgb(235, 220, 148);
+  background: rgb(215, 200, 181);
   margin: 0 28px;
 
 
@@ -34,22 +34,44 @@ h1 {
     color: rgb(122, 112, 53);
     
 }
+
 /* Paragraph title */
 .title {
     text-align: center;
     padding-bottom: 10px;
 }
 
-/* Client information fieldset. */
+/* Fieldset and Legend styling */
 
-.client-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 10px;
-   
-    
+fieldset {
+    border-radius: 10px;
 }
 
+legend {
+    /* text-align: center; */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(82, 78, 78);
+    padding: 20px;
+    text-align: center;
+}
+/* End Fieldset and Legend styling */
+
+/* Client information fieldset. */
+
+/* using grid to make 2 columns */
+.client-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    width: 100%;
+
+}
+
+
+/* evenly spacing for label and input */
 .user-info {
     display: flex;
     flex-direction: column;
@@ -58,17 +80,84 @@ h1 {
     padding-right:10px;
 }
 
-
-
-.user-info label {
+/* .user-info label {
     margin-right: 10px;
-}
+} */
 
 /* End client information fieldset. */
 
-legend {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    color: rgb(82, 78, 78);
+/* Consultation fieldset */
+
+.consultation-options {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    padding-left: 20px;
+    
 }
+
+.consultation-message {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+/* Add-On Options */
+.consultation-info .option-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 50px;
+    padding-bottom: 25px;
+    padding-top: 20px;
+}
+/* End Add-On Options */
+
+/* Consultation fieldset */
+
+/* Wedding Fieldset */
+
+.wedding-container{
+    padding-bottom: 20px;
+}
+
+.wedding-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 20px;
+    padding-right: 100px;
+    
+}
+
+/* End Wedding Fieldset */
+
+/* Reception Fieldset */
+
+.reception-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    
+}
+
+.reception-info {
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    text-align:left;
+    padding-right:10px;
+}
+
+/* End Reception Fieldset */
+
+/* Additional Information Fieldset */
+
+.addition-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+   
+}
+
+/* Additional Information Fieldset */
