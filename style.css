@@ -186,6 +186,14 @@ legend {
     }
 }
 
+@media only screen and (max-width: 750px) {
+    .consultation-info {
+        display: flex;
+        flex-direction: column;   
+        padding-right: 20px;     
+    }
+}
+
 @media only screen and (max-width: 600px) {
     /* fieldset {
         border:0 none;
@@ -195,6 +203,10 @@ legend {
     /* legend {
         text-align: left;
     } */
+
+    .container {
+        min-width: 280px;
+    }
 
     .client-container {
         display: flex;
@@ -210,12 +222,7 @@ legend {
         
     }
 
-    .consultation-options {
-        display: flex;
-        flex-direction: column;
-        padding-left: 20px;
-        
-    }
+  
 
     .consultation-options {
         display: flex;
