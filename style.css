@@ -15,7 +15,7 @@ body {
     align-items: center;
     color: rgb(97, 88, 35);
     padding-top: 25px;
-    background: rgb(101, 93, 50);
+    background: rgb(163, 153, 138);
     
 }
 
@@ -23,11 +23,11 @@ body {
   
   padding: 25px;
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
   border-radius: 10px;
   background: rgb(215, 200, 181);
   margin: 0 28px;
-
+  
 
 }
 
