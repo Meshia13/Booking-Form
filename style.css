@@ -27,7 +27,7 @@ body {
   border-radius: 10px;
   background: rgb(215, 200, 181);
   margin: 0 28px;
-  
+  box-shadow: inset -2px 2px 2px rgb(146, 136, 80);
 
 }
 
@@ -36,6 +36,7 @@ h1 {
     text-align: center;
     font-size: 6rem;
     color: rgb(122, 112, 53);
+
     
 }
 
@@ -197,11 +198,13 @@ legend {
 @media only screen and (max-width: 600px) {
     /* fieldset {
         border:0 none;
+       
     }
-     */
+    
 
-    /* legend {
+    legend {
         text-align: left;
+        border-bottom: 1px solid black;
     } */
 
     .container {
